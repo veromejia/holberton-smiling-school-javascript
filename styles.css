@@ -1,0 +1,174 @@
+body {
+    font-family: 'Source Sans Pro' !important;
+}
+
+.homepage-header {
+    background-image: url("images/pic_1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pricing-header {
+    background-image: url("images/pic_2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.course-header {
+    background-image: url("images/pic_3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: white !important;
+    font-weight: bolder;
+    font-size: 0.6rem;
+}
+
+a:hover {
+    color: #C271FF !important;
+}
+
+.form-control::placeholder {
+    color: white;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+
+.navbar-toggler {
+    width: 55px;
+    height: 45px;
+    background: none;
+    border: 3px solid rgb(187, 126, 12) !important;
+}
+
+.navbar-toggler .line {
+    width: 100%;
+    float: left;
+    height: 2px;
+    background: white;
+    margin: 3px 0 3px;
+}
+
+.navbar-toggler .line2 {
+    width: 70%;
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.btn {
+    background-color: #C271FF !important;
+    font-size: 0.7rem;
+}
+
+.bg-btn {
+   opacity: 0.6;
+    background-color: #8519d84f !important;
+}
+
+.btn:hover, .btn:active {
+    color: white !important;
+    font-weight: bolder;
+    opacity: 0.9;
+}
+
+.purple-bg {
+    background-color: #C271FF;
+}
+
+.bg-black {
+    background-color: #071629;
+}
+
+.purple-text {
+    color: #C271FF !important;
+}
+
+.sm-text {
+    font-size: 0.8rem;
+}
+
+.md-text {
+    font-size: 1.6rem;
+}
+
+.nowrap-text {
+    font-size: 10vw;
+}
+
+.coiny-tittle {
+    font-family: 'coiny' !important;
+    line-height: 1.4rem;
+}
+
+.play-img {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.popular-carousel {
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.star-size {
+    width: 15px;
+    height: 15px;
+}
+
+.width-text {
+    width: 200px;
+}
+
+.width-btn {
+    width: 150px;
+}
+ .dropdown-toggle::after {
+    float: right;
+    margin-top: 0.45rem;
+}
+
+
+.selected{
+    float: left;
+}
+
+[class^="holberton_school-icon-ic"] {
+    color: white !important;
+    font-size: 37px;
+}
+
+.holberton_school-icon-check {
+    font-size: 2rem;
+    color: #82D24F !important;
+}
+
+holberton_school-icon-search_2 {
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+    [class^="carousel-control-"] {
+        height: 15rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .popular-carousel {
+        width: 18%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .star-size {
+        width: 1.02vw;
+    }
+}
