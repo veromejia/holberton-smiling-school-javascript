@@ -39,7 +39,6 @@ a:hover {
     line-height: 0.8rem;
 }
 
-
 .navbar-toggler {
     width: 55px;
     height: 45px;
@@ -59,7 +58,7 @@ a:hover {
     width: 70%;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: black !important;
 }
 
@@ -69,7 +68,7 @@ a:hover {
 }
 
 .bg-btn {
-   opacity: 0.6;
+    opacity: 0.6;
     background-color: #8519d84f !important;
 }
 
@@ -80,7 +79,7 @@ a:hover {
 }
 
 .purple-bg {
-    background-color: #C271FF;
+    background-color: #C271FF !important;
 }
 
 .bg-black {
@@ -108,22 +107,12 @@ a:hover {
     line-height: 1.4rem;
 }
 
-.play-img {
-    position: absolute;
-    left: 40%;
-    top: 10%;
-}
-
-.popular-carousel {
-    width: 270px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .star-size {
     width: 15px;
     height: 15px;
 }
+
+
 
 .width-text {
     width: 200px;
@@ -132,13 +121,13 @@ a:hover {
 .width-btn {
     width: 150px;
 }
- .dropdown-toggle::after {
+
+.dropdown-toggle::after {
     float: right;
     margin-top: 0.45rem;
 }
 
-
-.selected{
+.selected {
     float: left;
 }
 
@@ -153,12 +142,131 @@ a:hover {
 }
 
 holberton_school-icon-search_2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
+/* carousel
+      ============================= */
+
+.carousel-caption {
+    position: unset;
+    max-width: 730px;
+    margin-right: 6rem;
+    margin-left: 3rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(./images/arrow_white_left.png);
+    width: 2rem;
+    height: 6rem;
+}
+
+.carousel-control-next-icon {
+    background-image: url(./images/arrow_white_right.png);
+    width: 2rem;
+    height: 6rem;
+}
+
+.item-inner {
+    padding-left: 5rem;
+}
+
+/* videos
+    ======================================*/
+
+.card-text {
+    max-width: 242px;
+    color: #838a94;
+}
+
+.profile-video {
+    color: #C271FF;
+}
+
+.section-video .carousel-control-prev-icon {
+    background-image: url(./images/arrow_black_left.png);
+    margin-left: -4rem !important;
+}
+
+.section-video .carousel-control-next-icon {
+    background-image: url(./images/arrow_black_right.png);
+    margin-right: -4rem !important;
+}
+
+.card {
+    width: 270px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.play-img {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+/* Dynamic carousel*/
+
+#videos .loading, #latestVideos .loading {
+    background-color: #C271FF;
+}
+
+
+@media (max-width: 576px) {
+    #videos.carousel-inner .carousel-item>div, #latestVideos.carousel-inner .carousel-item>div {
+        display: none !important;
+    }
+    #videos.carousel-inner .carousel-item>div:nth-child(1), #latestVideos.carousel-inner .carousel-item>div:nth-child(1) {
+        display: block !important;
+    }
+    .play-icon {
+        margin: -6.2rem 5.5rem !important;
+    }
+}
+
+#videos.carousel-inner .carousel-item.active, #videos.carousel-inner .carousel-item-next, #videos.carousel-inner .carousel-item-prev, #latestVideos.carousel-inner .carousel-item.active, #latestVideos.carousel-inner .carousel-item-next, #latestVideos.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 576px) {
+    #videos.carousel-inner .carousel-item-right.active, #videos.carousel-inner .carousel-item-next, #latestVideos.carousel-inner .carousel-item-right.active, #latestVideos.carousel-inner .carousel-item-next {
+        transform: translate(20.000%);
+    }
+    #videos.carousel-inner .carousel-item-left.active, #videos.carousel-inner .carousel-item-prev, #latestVideos.carousel-inner .carousel-item-left.active, #latestVideos.carousel-inner .carousel-item-prev {
+        transform: translateX(-20.000%);
+    }
+}
+
+#videos.carousel-inner .carousel-item-right, #videos.carousel-inner .carousel-item-left, #latestVideos.carousel-inner .carousel-item-right, #latestVideos.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+    background-color: white;
+}
+
+
+/* Filters Section
+      ================================ */
+      .bg-search{
+        background-color:  #d195ff;
+      }
+
+     .num-vid {
+        color: gray;
+     }
+
+     #courses {
+         margin-left: 5rem !important;
+     }
+
 @media only screen and (max-width: 575px) {
-    [class^="carousel-control-"] {
-        height: 15rem;
+    .carousel-item {
+        padding: 0;
+    }
+    .item-inner {
+        padding-left: 0;
+    }
+    .carousel-caption {
+        margin-left: 3.5rem;
+        margin-right: 2.8rem;
     }
 }
 
